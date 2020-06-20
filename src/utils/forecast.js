@@ -8,7 +8,7 @@ const getForecast = (lat, long, callback) => {
         } else if (error) {
             callback('Unable to location', undefined);
         } else {
-            callback(undefined, current.weather_descriptions + ". It is currently " + current.temperature + " degrees out. Feels like " + current.feelslike);
+            callback(undefined, current.weather_descriptions + ". It is currently " + current.temperature + " degrees out. Feels like " + current.feelslike +". And the humidity is "+current.humidity);
 
         }
     })
